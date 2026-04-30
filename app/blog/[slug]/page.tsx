@@ -1,0 +1,65 @@
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { posts } from "../../lib/posts";
+
+export function generateStaticParams() {
+  return posts.map((p) => ({ slug: p.slug }));
+}
+
+export default function BlogPostPage({ params }: { params: { slug: string } }) {
+  const post = posts.find((p) => p.slug === params.slug);
+  if (!post) return notFound();
+
+  return (
+    <section className="section" style={{ paddingTop: 40 }} aria-label={`Blog post: ${post.title}`}>
+      <div className="container">
+        <div className="section-header">
+          <div className="eyebrow" data-reveal>
+            <span className="dot" aria-hidden="true" />
+            <span>Blog</span>
+          </div>
+          <h1 className="h1" style={{ fontSize: "clamp(26px, 3.2vw, 42px)" }} data-reveal>
+            {post.title}
+          </h1>
+          <p className="lead" data-reveal>
+            {post.excerpt}
+          </p>
+          <div className="post-meta" style={{ marginTop: 14 }} data-reveal>
+            <span>{post.tags[0] ?? "Post"}</span>
+            <span>{post.readTime}</span>
+            <span>{post.updated.replace("Updated: ", "")}</span>
+          </div>
+        </div>
+
+        <article className="card" data-reveal style={{ padding: 22, lineHeight: 1.85, fontWeight: 650 }}>
+          {post.content.map((block, idx) => {
+            if (block.type === "heading") {
+              return (
+                <h2 key={idx} style={{ marginTop: idx === 0 ? 0 : 18, letterSpacing: "-0.01em" }}>
+                  {block.text}
+                </h2>
+              );
+            }
+            return (
+              <p key={idx} className="muted" style={{ margin: "0 0 12px" }}>
+                {block.text}
+              </p>
+            );
+          })}
+
+          <div className="divider" />
+
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <Link className="btn btn-accent" href="/contact">
+              Ask about a JB-tech topic
+            </Link>
+            <Link className="btn" href="/blog">
+              Back to Blog
+            </Link>
+          </div>
+        </article>
+      </div>
+    </section>
+  );
+}
+
