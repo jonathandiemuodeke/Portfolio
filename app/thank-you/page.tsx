@@ -29,7 +29,7 @@ export default function ThankYouPage() {
             </Link>
             <a
               className="btn btn-accent"
-              href="https://wa.me/2340000000000?text=Hello%20JB-tech%2C%20I%20just%20submitted%20the%20contact%20form."
+              href="https://wa.me/40759092013?text=Hello%20JB-tech%2C%20I%20just%20submitted%20the%20contact%20form."
               target="_blank"
               rel="noreferrer"
             >
