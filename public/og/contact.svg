@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b1830" />
+  <circle cx="980" cy="100" r="180" fill="#1d4ed8" opacity="0.28" />
+  <circle cx="250" cy="520" r="220" fill="#fbbf24" opacity="0.18" />
+  <text x="90" y="270" fill="#f0f6ff" font-family="Segoe UI, Arial" font-size="64" font-weight="800">Contact JB-tech</text>
+  <text x="90" y="345" fill="#fbbf24" font-family="Segoe UI, Arial" font-size="34" font-weight="700">Response time: within 24 hours</text>
+</svg>
+

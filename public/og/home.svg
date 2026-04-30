@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07101f" />
+      <stop offset="100%" stop-color="#0b1830" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="180" cy="120" r="160" fill="#1d4ed8" opacity="0.35" />
+  <circle cx="1020" cy="100" r="180" fill="#fbbf24" opacity="0.20" />
+  <text x="80" y="290" fill="#eaf2ff" font-family="Segoe UI, Arial" font-size="70" font-weight="800">JB-tech</text>
+  <text x="80" y="360" fill="#fbbf24" font-family="Segoe UI, Arial" font-size="38" font-weight="700">Full Stack " E-commerce " IT Services</text>
+</svg>
+
