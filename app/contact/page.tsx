@@ -56,6 +56,10 @@ export default function ContactPage() {
           <p className="lead" data-reveal>
             Use the form below. It submits via Netlify Forms on the free hosting plan.
           </p>
+          <div className="tag-row" data-reveal style={{ marginTop: 14 }}>
+            <span className="tag">Response time: within 24 hours</span>
+            <span className="tag">Netlify form capture enabled</span>
+          </div>
         </div>
 
         <div className="grid-2" style={{ alignItems: "start" }}>
@@ -98,11 +102,27 @@ export default function ContactPage() {
           </div>
 
           <div className="card" data-reveal>
+            <div style={{ marginBottom: 12, display: "flex", gap: 12, flexWrap: "wrap" }}>
+              <a
+                className="btn"
+                href="https://wa.me/2340000000000?text=Hello%20JB-tech%2C%20I%20need%20help%20with%20my%20project."
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chat on WhatsApp
+              </a>
+              <span className="helper" style={{ alignSelf: "center" }}>
+                Prefer quick chat? Reach out directly.
+              </span>
+            </div>
+
             <form
               className="form"
               name="contact"
               method="post"
+              action="/thank-you"
               data-netlify="true"
+              netlify-honeypot="bot-field"
               onSubmit={(e) => {
                 if (!validate()) e.preventDefault();
               }}
