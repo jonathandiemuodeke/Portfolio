@@ -1,17 +1,73 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { posts } from "../../lib/posts";
+import type { Metadata } from "next";
+import { SITE_URL } from "../../lib/site";
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const post = posts.find((p) => p.slug === params.slug);
+  if (!post) {
+    return {
+      title: "Post not found | JB-tech",
+      description: "This JB-tech blog post could not be found.",
+    };
+  }
+
+  return {
+    title: `${post.title} | JB-tech Blog`,
+    description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
+    openGraph: {
+      title: `${post.title} | JB-tech Blog`,
+      description: post.excerpt,
+      images: ["/og/blog-post.svg"],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} | JB-tech Blog`,
+      description: post.excerpt,
+      images: ["/og/blog-post.svg"],
+    },
+  };
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = posts.find((p) => p.slug === params.slug);
   if (!post) return notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: `${SITE_URL}/og/blog-post.svg`,
+    author: {
+      "@type": "Organization",
+      name: "JB-tech",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "JB-tech",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/og/home.svg`,
+      },
+    },
+    mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
+    dateModified: "2026-01-01",
+    datePublished: "2026-01-01",
+  };
+
   return (
     <section className="section" style={{ paddingTop: 40 }} aria-label={`Blog post: ${post.title}`}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="container">
         <div className="section-header">
           <div className="eyebrow" data-reveal>
