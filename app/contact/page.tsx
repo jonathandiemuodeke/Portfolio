@@ -105,7 +105,7 @@ export default function ContactPage() {
             <div style={{ marginBottom: 12, display: "flex", gap: 12, flexWrap: "wrap" }}>
               <a
                 className="btn"
-                href="https://wa.me/2340000000000?text=Hello%20JB-tech%2C%20I%20need%20help%20with%20my%20project."
+                href="https://wa.me/40759092013?text=Hello%20JB-tech%2C%20I%20need%20help%20with%20my%20project."
                 target="_blank"
                 rel="noreferrer"
               >
