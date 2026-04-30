@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="JB-tech personal portfolio: full stack web development, e-commerce builds, and IT support." />
+    <title>JB-tech | Personal Portfolio</title>
+
+    <meta property="og:title" content="JB-tech" />
+    <meta property="og:description" content="Full stack websites, e-commerce builds, and general IT support." />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-base=".">
+    <div data-partial="header"></div>
+
+    <main id="main">
+      <section class="hero">
+        <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow" data-reveal>
+              <span class="dot" aria-hidden="true"></span>
+              <span>Full stack + IT support</span>
+            </div>
+
+            <h1 class="h1" data-reveal>
+              JB-tech builds fast, modern websites
+              <span style="color: var(--accent);">with smart functionality</span>.
+            </h1>
+
+            <p class="lead" data-reveal>
+              From responsive web apps to e-commerce and practical general IT services, I deliver clean work that looks great and
+              performs well.
+            </p>
+
+            <div class="hero-actions" data-reveal>
+              <a class="btn btn-primary" href="/projects.html">
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v7" />
+                    <path d="M7 17h10" />
+                    <path d="M9 20h6" />
+                  </svg>
+                </span>
+                View Projects
+              </a>
+              <a class="btn btn-accent" href="/contact.html">
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+                  </svg>
+                </span>
+                Contact JB-tech
+              </a>
+              <a class="btn" href="/services.html" style="background: var(--panel-2);">
+                Explore Services
+              </a>
+            </div>
+
+            <ul class="list">
+              <li class="feature" data-reveal>
+                <span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </span>
+                <p>Responsive design across devices (mobile, tablet, desktop)</p>
+              </li>
+              <li class="feature" data-reveal>
+                <span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 1v22" />
+                    <path d="M17 6l-5-5-5 5" />
+                    <path d="M7 18l5 5 5-5" />
+                  </svg>
+                </span>
+                <p>Rich UI features: filtering, modals, accordions, and validation</p>
+              </li>
+              <li class="feature" data-reveal>
+                <span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 6v6l4 2" />
+                    <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                </span>
+                <p>Clean performance-focused layouts you can maintain</p>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="hero-card" data-reveal>
+            <h2 style="margin: 0 0 10px; letter-spacing: -0.01em;">Quick snapshot</h2>
+            <p class="muted" style="margin: 0 0 16px; font-weight: 650; line-height: 1.6;">
+              A practical portfolio built for real clients and real results.
+            </p>
+
+            <div class="hero-stats" aria-label="Highlights">
+              <div class="stat">
+                <strong style="color: var(--primary-2);">IT-ready UI</strong>
+                <span>Modern layout + UX</span>
+              </div>
+              <div class="stat">
+                <strong style="color: var(--accent);">Blue / Gold</strong>
+                <span>Dark + Light themes</span>
+              </div>
+              <div class="stat">
+                <strong>3 service lines</strong>
+                <span>Web + E-com + IT</span>
+              </div>
+              <div class="stat">
+                <strong>Responsive</strong>
+                <span>All screen sizes</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <a class="btn btn-primary" href="/services.html" style="width: 100%; justify-content: center;">
+              See my service menu
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Services preview">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Services</span>
+            </div>
+            <h2 style="margin: 14px 0 10px; font-size: clamp(22px, 2.6vw, 30px); letter-spacing: -0.01em;" data-reveal>
+              What JB-tech can help you with
+            </h2>
+            <p class="lead" data-reveal>
+              Clear solutions for clients who want a dependable website and support that actually works.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card" data-reveal>
+              <h3>Full stack web development</h3>
+              <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+                From landing pages to interactive dashboards. Built with accessibility, responsiveness, and clean UI patterns.
+              </p>
+              <div class="tag-row" aria-label="Skills">
+                <span class="tag">Responsive UI</span>
+                <span class="tag">Performance</span>
+                <span class="tag">Clean structure</span>
+              </div>
+            </article>
+
+            <article class="card" data-reveal>
+              <h3>E-commerce development</h3>
+              <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+                Product pages, cart-style UI, and smooth browsing experiences. Ideal for small businesses and launches.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Product UI</span>
+                <span class="tag">Checkout-ready</span>
+                <span class="tag">Conversion UX</span>
+              </div>
+            </article>
+
+            <article class="card" data-reveal>
+              <h3>General IT service</h3>
+              <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+                Practical support like troubleshooting, setup, and improving workflows. Help that’s quick and understandable.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Troubleshooting</span>
+                <span class="tag">Setup support</span>
+                <span class="tag">Advice</span>
+              </div>
+            </article>
+          </div>
+
+          <div style="margin-top: 20px; display: flex; gap: 14px; flex-wrap: wrap;" data-reveal>
+            <a class="btn btn-accent" href="/services.html">Open full service details</a>
+            <a class="btn" href="/contact.html">Ask a question</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Projects preview">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Projects</span>
+            </div>
+            <h2 style="margin: 14px 0 10px; font-size: clamp(22px, 2.6vw, 30px); letter-spacing: -0.01em;" data-reveal>
+              Cool, non-complex projects you can edit later
+            </h2>
+            <p class="lead" data-reveal>
+              These examples are designed to look strong and demonstrate features without being too heavy.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <a class="card project-card" data-reveal href="/projects.html">
+              <h3>IT Helpdesk Dashboard UI</h3>
+              <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+                Ticket overview, status filters, and a clean layout for technicians.
+              </p>
+              <div class="meta">
+                <span class="meta-item">General IT</span>
+                <span class="meta-item">Dashboard</span>
+              </div>
+            </a>
+
+            <a class="card project-card" data-reveal href="/projects.html">
+              <h3>E-commerce Storefront Concept</h3>
+              <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+                Product grid, category filtering, and conversion-friendly UI details.
+              </p>
+              <div class="meta">
+                <span class="meta-item">E-commerce</span>
+                <span class="meta-item">UI/UX</span>
+              </div>
+            </a>
+
+            <a class="card project-card" data-reveal href="/projects.html">
+              <h3>Security Audit Checklist Tool</h3>
+              <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+                Checklist flow with export-ready structure and clear documentation.
+              </p>
+              <div class="meta">
+                <span class="meta-item">Security</span>
+                <span class="meta-item">Process</span>
+              </div>
+            </a>
+          </div>
+
+          <div style="margin-top: 20px; display: flex; gap: 14px; flex-wrap: wrap;" data-reveal>
+            <a class="btn btn-primary" href="/projects.html">Browse and filter all projects</a>
+            <a class="btn" href="/blog/index.html">Read JB-tech blog</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Contact CTA" style="padding-top: 36px;">
+        <div class="container">
+          <div class="card" data-reveal style="padding: 22px;">
+            <div class="grid-2" style="align-items: center;">
+              <div>
+                <div class="eyebrow">
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>Let’s talk</span>
+                </div>
+                <h2 style="margin: 14px 0 10px; letter-spacing: -0.01em;">Ready to build or fix something?</h2>
+                <p class="lead" style="margin-top: 0;">
+                  Send a message and I’ll get back with next steps and an estimate.
+                </p>
+              </div>
+              <div style="display: flex; justify-content: flex-end; gap: 14px; flex-wrap: wrap;">
+                <a class="btn btn-accent" href="/contact.html">Contact JB-tech</a>
+                <a class="btn btn-primary" href="/services.html">See services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-partial="footer"></div>
+    <script src="/js/app.js" defer></script>
+  </body>
+</html>
+

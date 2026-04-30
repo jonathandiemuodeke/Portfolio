@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="JB-tech projects: filtered portfolio cards with modal details and client-friendly UX." />
+    <title>Projects | JB-tech</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-base=".">
+    <div data-partial="header"></div>
+
+    <main id="main" class="section" style="padding-top: 40px;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Projects</span>
+          </div>
+          <h1 class="h1" style="font-size: clamp(28px, 3.2vw, 44px);" data-reveal>
+            Browse projects with search and filters
+          </h1>
+          <p class="lead" data-reveal>
+            Click any card to open details. You can edit project text later to match your real work.
+          </p>
+        </div>
+
+        <div class="toolbar" aria-label="Project filters" data-reveal>
+          <div style="display: grid; gap: 10px;">
+            <input
+              class="input"
+              type="search"
+              placeholder="Search projects (e.g., security, dashboard)..."
+              data-project-search
+              aria-label="Search projects"
+            />
+          </div>
+
+          <div style="display: grid; gap: 10px;">
+            <select class="select" data-project-category aria-label="Category filter">
+              <option value="all">All categories</option>
+              <option value="full stack">Full stack</option>
+              <option value="e-commerce">E-commerce</option>
+              <option value="general it">General IT</option>
+              <option value="security">Security</option>
+            </select>
+          </div>
+
+          <div class="pill-row" data-project-tags>
+            <button class="pill is-active" type="button" data-pill="all">
+              All
+            </button>
+            <button class="pill" type="button" data-pill="dashboard">
+              Dashboard
+            </button>
+            <button class="pill" type="button" data-pill="e-commerce">
+              E-commerce
+            </button>
+            <button class="pill" type="button" data-pill="security">
+              Security
+            </button>
+            <button class="pill" type="button" data-pill="ui-ux">
+              UI/UX
+            </button>
+            <button class="pill" type="button" data-pill="productivity">
+              Productivity
+            </button>
+          </div>
+        </div>
+
+        <div class="grid-3" aria-label="Project cards">
+          <article
+            class="card project-card"
+            data-project-card
+            data-title="IT Helpdesk Dashboard UI"
+            data-category="general it"
+            data-tags='["dashboard","productivity","ui-ux"]'
+            data-blurb="A practical technician dashboard UI: organize tickets, track status, and keep workflows fast."
+            data-features='["Ticket overview cards","Status filters (open/in progress/resolved)","Responsive layout for tablets & phones","Clean component structure you can expand"]'
+          >
+            <h3>IT Helpdesk Dashboard UI</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              Ticket overview + filters designed for technicians.
+            </p>
+            <div class="meta">
+              <span class="meta-item">General IT</span>
+              <span class="meta-item">Dashboard</span>
+            </div>
+          </article>
+
+          <article
+            class="card project-card"
+            data-project-card
+            data-title="E-commerce Storefront Concept"
+            data-category="e-commerce"
+            data-tags='["e-commerce","ui-ux","productivity"]'
+            data-blurb="A storefront concept focused on browsing UX: product grid, categories, and a smooth conversion flow."
+            data-features='["Category browsing UI","Product card hover details","Responsive product grid","CTA placement for conversion"]'
+          >
+            <h3>E-commerce Storefront Concept</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              Product browsing UI with category filtering.
+            </p>
+            <div class="meta">
+              <span class="meta-item">E-commerce</span>
+              <span class="meta-item">UI/UX</span>
+            </div>
+          </article>
+
+          <article
+            class="card project-card"
+            data-project-card
+            data-title="Security Audit Checklist Tool"
+            data-category="security"
+            data-tags='["security","productivity","ui-ux"]'
+            data-blurb="A guided checklist tool for security reviews. It’s structured to make audits repeatable and easy to follow."
+            data-features='["Checklist steps + completion states","Clear section layout","Export-ready structure (UI)","Accessibility-first components"]'
+          >
+            <h3>Security Audit Checklist Tool</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              Security checklist UI that feels straightforward.
+            </p>
+            <div class="meta">
+              <span class="meta-item">Security</span>
+              <span class="meta-item">UI/UX</span>
+            </div>
+          </article>
+
+          <article
+            class="card project-card"
+            data-project-card
+            data-title="Full Stack Portfolio with CMS-like Blog UI"
+            data-category="full stack"
+            data-tags='["ui-ux","productivity"]'
+            data-blurb="A portfolio/blog UI concept with polished cards, filters, and an easy reading experience."
+            data-features='["Blog list cards + tag filtering","Post layout templates","Reusable design system patterns","Responsive typography"]'
+          >
+            <h3>Full Stack Portfolio Blog UI</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              Blog experience with filters and clean post layout.
+            </p>
+            <div class="meta">
+              <span class="meta-item">Full stack</span>
+              <span class="meta-item">Productivity</span>
+            </div>
+          </article>
+
+          <article
+            class="card project-card"
+            data-project-card
+            data-title="Admin Panel UI for Small Business"
+            data-category="full stack"
+            data-tags='["dashboard","ui-ux","productivity"]'
+            data-blurb="An admin panel UI concept with quick navigation, tables/cards, and consistent spacing."
+            data-features='["Responsive grid-based layout","Reusable cards + badges","Friendly empty states (UI)","Consistent header patterns"]'
+          >
+            <h3>Admin Panel UI for SMB</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              Clean admin UI concept for small business workflows.
+            </p>
+            <div class="meta">
+              <span class="meta-item">Full stack</span>
+              <span class="meta-item">Dashboard</span>
+            </div>
+          </article>
+
+          <article
+            class="card project-card"
+            data-project-card
+            data-title="IT Setup & Troubleshooting Guide Pages"
+            data-category="general it"
+            data-tags='["productivity","ui-ux"]'
+            data-blurb="Guided documentation pages to help users troubleshoot. Focused on readability and quick scanning."
+            data-features='["Readable section layouts","Quick tips + callouts (UI)","Mobile-first typography","Clear step-by-step structure"]'
+          >
+            <h3>IT Setup & Troubleshooting Guides</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              Documentation-style pages for faster support.
+            </p>
+            <div class="meta">
+              <span class="meta-item">General IT</span>
+              <span class="meta-item">Productivity</span>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top: 22px; display: flex; gap: 14px; flex-wrap: wrap;" data-reveal>
+          <a class="btn btn-accent" href="/contact.html">Request a project quote</a>
+          <a class="btn" href="/services.html">Match a service to your need</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-overlay" data-modal-overlay aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true" aria-label="Project modal">
+        <div class="modal-header">
+          <div class="modal-title" data-modal-title>Project details</div>
+          <button class="modal-close" type="button" data-modal-close aria-label="Close modal">
+            ×
+          </button>
+        </div>
+        <div class="modal-body" data-modal-body></div>
+      </div>
+    </div>
+
+    <div data-partial="footer"></div>
+    <script src="/js/app.js" defer></script>
+  </body>
+</html>
+

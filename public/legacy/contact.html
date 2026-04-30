@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact JB-tech: use Netlify Forms to send a message for web development, e-commerce, or IT support." />
+    <title>Contact | JB-tech</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-base=".">
+    <div data-partial="header"></div>
+
+    <main id="main" class="section" style="padding-top: 40px;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Contact</span>
+          </div>
+          <h1 class="h1" style="font-size: clamp(28px, 3.2vw, 44px);" data-reveal>
+            Send a message to JB-tech
+          </h1>
+          <p class="lead" data-reveal>
+            Use the form below. It submits via Netlify Forms on the free hosting plan.
+          </p>
+        </div>
+
+        <div class="grid-2" style="align-items: start;">
+          <div class="card" data-reveal>
+            <h3 style="margin-top: 0;">What to include</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              The better your details, the faster I can respond with next steps and an estimate.
+            </p>
+            <div class="divider"></div>
+            <ul class="list" style="margin-top: 0;">
+              <li class="feature">
+                <span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20h9" />
+                    <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z" />
+                  </svg>
+                </span>
+                <p>Project type: full stack, e-commerce, or general IT</p>
+              </li>
+              <li class="feature">
+                <span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 12h-4l-2 2-2-2H2" />
+                    <path d="M6 4h12" />
+                    <path d="M8 20h8" />
+                  </svg>
+                </span>
+                <p>Goals: what success looks like for you</p>
+              </li>
+              <li class="feature">
+                <span class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 6v6l4 2" />
+                  </svg>
+                </span>
+                <p>Timeline: when you’d like to start</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card" data-reveal>
+            <form class="form" data-contact-form name="contact" method="post" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
+
+              <!-- Honeypot for bots -->
+              <div style="display: none;">
+                <label>
+                  Don’t fill this out:
+                  <input name="bot-field" />
+                </label>
+              </div>
+
+              <div class="field">
+                <label for="name">Your name</label>
+                <input id="name" class="input" type="text" name="name" data-field-name required />
+                <div class="error" data-error-name role="alert"></div>
+              </div>
+
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" class="input" type="email" name="email" data-field-email required />
+                <div class="error" data-error-email role="alert"></div>
+              </div>
+
+              <div class="field">
+                <label for="service">What do you need?</label>
+                <select id="service" class="select" name="service">
+                  <option value="Full stack web development">Full stack web development</option>
+                  <option value="E-commerce development">E-commerce development</option>
+                  <option value="General IT service">General IT service</option>
+                </select>
+                <div class="helper">Pick one to help me route your message.</div>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  data-field-message
+                  class="input"
+                  required
+                ></textarea>
+                <div class="error" data-error-message role="alert"></div>
+                <div class="helper">Minimum 10 characters. Include any links or requirements.</div>
+              </div>
+
+              <button class="btn btn-accent" type="submit" style="justify-content: center;">
+                Send message
+              </button>
+
+              <div class="muted helper" style="margin-top: 6px;">
+                By sending, you agree to be contacted about your request.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="footer"></div>
+    <script src="/js/app.js" defer></script>
+  </body>
+</html>
+
