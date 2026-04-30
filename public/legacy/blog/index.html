@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="JB-tech blog: practical notes on full stack development, e-commerce UX, and IT support." />
+    <title>Blog | JB-tech</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-base="..">
+    <div data-partial="header"></div>
+
+    <main id="main" class="section" style="padding-top: 40px;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Blog</span>
+          </div>
+          <h1 class="h1" style="font-size: clamp(28px, 3.2vw, 44px);" data-reveal>
+            Practical tech notes
+          </h1>
+          <p class="lead" data-reveal>
+            Filter by topic, search, then open any post. Replace these sample posts later.
+          </p>
+        </div>
+
+        <div class="toolbar" data-reveal>
+          <div style="display: grid; gap: 10px;">
+            <input class="input" type="search" placeholder="Search posts..." data-blog-search aria-label="Search blog posts" />
+          </div>
+          <div class="pill-row">
+            <button class="pill is-active" type="button" data-blog-tag="all">
+              All
+            </button>
+            <button class="pill" type="button" data-blog-tag="full stack">
+              Full stack
+            </button>
+            <button class="pill" type="button" data-blog-tag="e-commerce">
+              E-commerce
+            </button>
+            <button class="pill" type="button" data-blog-tag="it">
+              IT support
+            </button>
+            <button class="pill" type="button" data-blog-tag="security">
+              Security
+            </button>
+          </div>
+        </div>
+
+        <div class="grid-3 blog-layout" aria-label="Blog posts">
+          <a
+            class="card post-card"
+            data-blog-post
+            href="/blog/post-security-audit.html"
+            data-title="Security Audit Checklist: What to Check First"
+            data-tags='["security","it","full stack"]'
+          >
+            <h3>Security Audit Checklist: What to Check First</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              A practical order for auditing systems without getting overwhelmed.
+            </p>
+            <div class="post-meta">
+              <span>Security</span>
+              <span>5 min read</span>
+            </div>
+          </a>
+
+          <a
+            class="card post-card"
+            data-blog-post
+            href="/blog/post-ecommerce-stack.html"
+            data-title="E-commerce UX: Small Changes That Improve Store Conversions"
+            data-tags='["e-commerce","full stack","ui-ux"]'
+          >
+            <h3>E-commerce UX: Small Changes That Improve Store Conversions</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              How to reduce friction: navigation, product cards, and CTA clarity.
+            </p>
+            <div class="post-meta">
+              <span>E-commerce</span>
+              <span>6 min read</span>
+            </div>
+          </a>
+
+          <a
+            class="card post-card"
+            data-blog-post
+            href="/blog/post-helpdesk-ui.html"
+            data-title="Designing a Helpdesk Dashboard for Real Technicians"
+            data-tags='["it","full stack","productivity"]'
+          >
+            <h3>Designing a Helpdesk Dashboard for Real Technicians</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              Layout patterns that make ticket triage faster and calmer.
+            </p>
+            <div class="post-meta">
+              <span>IT support</span>
+              <span>4 min read</span>
+            </div>
+          </a>
+        </div>
+
+        <div style="margin-top: 22px;" data-reveal>
+          <div class="card" style="padding: 22px;">
+            <h3 style="margin: 0 0 10px;">Want posts like these?</h3>
+            <p class="muted" style="margin: 0; line-height: 1.7; font-weight: 650;">
+              If you’re planning a new website or need IT guidance, send a message and tell me what you’re building.
+            </p>
+            <div style="margin-top: 14px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a class="btn btn-accent" href="/contact.html">Contact JB-tech</a>
+              <a class="btn" href="/projects.html">See projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="footer"></div>
+    <script src="/js/app.js" defer></script>
+  </body>
+</html>
+
