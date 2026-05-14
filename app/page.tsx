@@ -190,9 +190,9 @@ export default function HomePage() {
             <h2 style={{ margin: "14px 0 10px", fontSize: "clamp(22px, 2.6vw, 30px)", letterSpacing: "-0.01em" }} data-reveal>
               Cool, non-complex projects you can edit later
             </h2>
-            <p className="lead" data-reveal>
+            {/* <p className="lead" data-reveal>
               These examples are designed to look strong and demonstrate features without being too heavy.
-            </p>
+            </p> */}
           </div>
 
           <div className="grid-3">
