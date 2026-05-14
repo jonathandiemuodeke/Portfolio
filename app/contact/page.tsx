@@ -125,7 +125,7 @@ export default function ContactPage() {
               netlify-honeypot="bot-field"
               onSubmit={(e) => {
                 if (!validate()) e.preventDefault();
-              }}
+              }} netlify
             >
               <input type="hidden" name="form-name" value="contact" />
 
