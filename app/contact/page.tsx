@@ -54,11 +54,11 @@ export default function ContactPage() {
             Send a message to JB-tech
           </h1>
           <p className="lead" data-reveal>
-            Use the form below. It submits via Netlify Forms on the free hosting plan.
+            Use the form below. We will get back to you as soon as we receive your message.
           </p>
           <div className="tag-row" data-reveal style={{ marginTop: 14 }}>
             <span className="tag">Response time: within 24 hours</span>
-            <span className="tag">Netlify form capture enabled</span>
+            <span className="tag">Form capture enabled</span>
           </div>
         </div>
 
