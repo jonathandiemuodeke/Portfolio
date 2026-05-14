@@ -111,7 +111,7 @@ export default function ProjectsPage() {
             Browse projects with search and filters
           </h1>
           <p className="lead" data-reveal>
-            Click any card to open details. You can edit project text later to match your real work.
+            Click any card to open details.
           </p>
         </div>
 
